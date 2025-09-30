@@ -7,7 +7,6 @@ import StartSeite from "./header-components-pages/StartSeite.tsx";
 import Produkte from "./header-components-pages/Produkte.tsx";
 import UeberUns from "./header-components-pages/UeberUns.tsx";
 import Kontakt from "./header-components-pages/Kontakt.tsx";
-
 import { Routes, Route } from "react-router-dom";
 
 
