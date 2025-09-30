@@ -12,10 +12,18 @@ const MobileMenu = ({ isOpen , onClose}: MobileMenuProps) => {
             isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
             <nav className="p-4">
                 <ul className="space-y-4 divide-y divide-gray-200">
-                    <li><NavLink to="/" onClick={onClose} className="text-s">Startseite</NavLink></li>
-                    <li><NavLink to="/produkte" onClick={onClose} className="text-s">Produkte</NavLink></li>
-                    <li><NavLink to="/ueber-uns" onClick={onClose} className="text-s">Über uns</NavLink></li>
-                    <li><NavLink to="/kontakt" onClick={onClose} className="text-s">Kontakt</NavLink></li>
+                    <li>
+                        <NavLink to="/" onClick={onClose} className="text-s">Startseite</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/produkte" onClick={onClose} className="text-s">Produkte</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/ueber-uns" onClick={onClose} className="text-s">Über uns</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/kontakt" onClick={onClose} className="text-s">Kontakt</NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>

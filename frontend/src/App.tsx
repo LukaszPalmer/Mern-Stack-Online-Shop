@@ -19,8 +19,8 @@ function App() {
               <Routes>
                 <Route path = "/" element = {<StartSeite/>}/>
                 <Route path = "/profil" element = {<Profil/>}/>
-                <Route path = "/favoriten" element = {<Favoriten />}/>
-                <Route path = "/warenkorb" element = {<Warenkorb />}/>
+                <Route path = "/favoriten" element = {<Favoriten/>}/>
+                <Route path = "/warenkorb" element = {<Warenkorb/>}/>
                 <Route path = "/produkte" element = {<Produkte/>}/>
                 <Route path = "/ueber-uns" element = {<UeberUns/>}/>
                 <Route path = "/kontakt" element = {<Kontakt/>}/>

@@ -1,7 +1,10 @@
+import HeroBanner from "../startseite-components/HeroBanner.tsx";
+
+
 const StartSeite = () => {
     return (
         <div>
-            Startseite
+            <HeroBanner />
         </div>
     )
 };

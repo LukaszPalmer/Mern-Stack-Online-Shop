@@ -1,4 +1,3 @@
-// src/components/HamburgerButton.tsx
 
 interface HamburgerButtonProps {
     isOpen: boolean;
@@ -24,7 +23,7 @@ const HamburgerButton = ({ isOpen, onClick }: HamburgerButtonProps) => {
             ${isOpen ? "opacity-0" : ""}`}></span>
             <span
                 className={`${lineClasses} 
-            ${isOpen ? "-rotate-45 top-1/2" : "top-[21px]"} w-6`}></span>
+            ${isOpen ? "-rotate-45 top-1/2" : "top-[22px]"} w-6`}></span>
         </button>
     );
 };
