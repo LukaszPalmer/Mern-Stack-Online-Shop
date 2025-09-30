@@ -5,25 +5,25 @@ import cartIcon from '../assets/shopping-cart-light.svg';
 import snooLogo from '../assets/removedBG.png';
 
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import IconButton from './IconButton.tsx';
+import MobileMenu from './MobileMenu.tsx';
+import HamburgerButton from './HamburgerButton.tsx';
 
 const Header = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return <header className="w-full grid grid-cols-12 gap-4 p-4">
-        <nav aria-label='Hauptmenü' className="col-start-1 col-end-4 flex flex-row justify-around">
-            <div className="flex flex-col justify-center">
-                <button className="flex flex-col space-y-1.5 items-start cursor-pointer">
-                    <span className='sr-only'>Menü öffnen</span>
-                    <span className='block w-5 h-px bg-black'></span>
-                    <span className='block w-7 h-px bg-black'></span>
-                    <span className='block w-5 h-px bg-black'></span>
-                </button>
-            </div>
+        <nav aria-label='Hauptmenü' className="col-start-1 col-end-4 flex flex-row justify-around items-center">
+            <HamburgerButton isOpen = {isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)}/>
             <button className="flex flex-col justify-center cursor-pointer">
                 <span className='sr-only'>Suche öffnen</span>
                 <img src= {searchIcon} alt="Lupe zur Suche" />
             </button>
         </nav>
+        <MobileMenu isOpen = {isMenuOpen} onClose={() => setIsMenuOpen(false)}/>
         <section className="col-start-4 col-end-9 p-2 flex justify-center">
             <div className='block'>
                 <a href="/" className='block' aria-label='Zur Startseite'>
