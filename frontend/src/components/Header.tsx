@@ -31,7 +31,7 @@ const Header = () => {
                 </a>
             </div>
         </section>
-        <nav aria-label='Benutzerinteraktionen' className="col-start-9 col-end-13 p-2 flex justify-around items-center">
+        <nav aria-label='Benutzerinteraktionen' className="col-start-9 col-end-13 flex justify-around items-center">
             <Link to = "/profil">
                 <IconButton icon= {userProfile} altText= "Benutzerprofil"/>
             </Link>

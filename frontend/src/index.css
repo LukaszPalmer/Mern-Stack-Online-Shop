@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --- Pagination Dots --- */
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    width: 10px;
+    height: 10px;
+    z-index: 50; 
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
